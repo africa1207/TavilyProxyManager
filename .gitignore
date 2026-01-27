@@ -1,0 +1,9 @@
+server/data/
+server/public/assets/
+web/dist/
+web/node_modules/
+web/.vite/
+build/
+data/
+*.exe
+*.db

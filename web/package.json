@@ -1,0 +1,26 @@
+{
+  "name": "tavily-proxy-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vicons/ionicons5": "^0.13.0",
+    "@vicons/utils": "^0.1.4",
+    "axios": "^1.6.8",
+    "echarts": "^5.5.0",
+    "naive-ui": "^2.38.2",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vue-tsc": "^2.0.19"
+  }
+}
