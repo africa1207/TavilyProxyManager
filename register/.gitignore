@@ -37,7 +37,6 @@ env/
 config.yaml
 email.txt
 *.log
-*.txt
 
 # AI/Editor tools
 .zencoder/
