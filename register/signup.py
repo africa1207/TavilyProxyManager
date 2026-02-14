@@ -81,9 +81,12 @@ def load_config(config_path: str = None) -> dict:
     return config
 
 
-def create_session() -> requests.Session:
+def create_session(proxy: str | None = None) -> requests.Session:
     """
     创建配置好的请求会话
+
+    Args:
+        proxy: socks5 代理地址（如 socks5://ip:port），None 表示不使用代理
 
     Returns:
         requests.Session 对象
@@ -94,6 +97,15 @@ def create_session() -> requests.Session:
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
     })
+
+    if proxy:
+        session.proxies = {
+            "http": proxy,
+            "https": proxy,
+        }
+        # 禁用环境变量代理，防止系统代理覆盖 socks5 设置
+        session.trust_env = False
+
     return session
 
 
@@ -1628,6 +1640,7 @@ def signup(
     keep_session: bool = False,
     *,
     debug_init: bool = False,
+    proxy_manager: "Socks5PoolManager | None" = None,
 ) -> dict:
     """
     完整的注册流程
@@ -1639,6 +1652,7 @@ def signup(
         max_retries: 验证码识别最大重试次数
         mail_api_base: 临时邮箱API基础地址（用于接收验证邮件）
         mail_jwt: 临时邮箱JWT令牌
+        proxy_manager: SOCKS5 代理池管理器（可选）
 
     Returns:
         注册结果
@@ -1660,7 +1674,21 @@ def signup(
         print(f"注册尝试 {attempt + 1}/{max_retries}")
         print(f"{'='*60}")
 
-        session = create_session()
+        # 获取代理（穷尽所有可用代理，只有全部失败才降级到系统代理）
+        proxy = None
+        if proxy_manager and proxy_manager.enabled:
+            while True:
+                proxy = proxy_manager.get_proxy()
+                if proxy is None:
+                    # 代理池彻底耗尽（全部 banned 或配额用完后重置仍无可用）
+                    print(f"[PROXY] 代理池已耗尽，降级到系统代理")
+                    break
+                if proxy_manager.test_connectivity(proxy):
+                    print(f"[PROXY] 注册流程开始，绑定代理: {proxy}")
+                    break
+                # test_connectivity 失败会自动 ban，继续尝试下一个
+
+        session = create_session(proxy=proxy)
         keep_open = False
         try:
 
@@ -1769,6 +1797,8 @@ def signup(
                                                 result["api_keys"] = keys_result["keys"]
                                                 result["success"] = True
                                                 print(f"\n注册全部完成!")
+                                                if proxy and proxy_manager:
+                                                    proxy_manager.mark_used(proxy)
                                                 if keep_session:
                                                     result["session"] = session
                                                     keep_open = True
@@ -1798,6 +1828,8 @@ def signup(
                                                     result["api_keys"] = keys_result["keys"]
                                                     result["success"] = True
                                                     print(f"\n注册全部完成!")
+                                                    if proxy and proxy_manager:
+                                                        proxy_manager.mark_used(proxy)
                                                     if keep_session:
                                                         result["session"] = session
                                                         keep_open = True
@@ -1806,6 +1838,8 @@ def signup(
                                                     result["error"] = "API Key未生成"
                                                     result["success"] = True  # 注册成功但key未生成
                                                     result["step"] = 5
+                                                    if proxy and proxy_manager:
+                                                        proxy_manager.mark_used(proxy)
                                                     if keep_session:
                                                         result["session"] = session
                                                         keep_open = True
@@ -1830,16 +1864,25 @@ def signup(
                         else:
                             result["success"] = True
                             print(f"\n注册完成! (未进行邮箱验证)")
+                            if proxy and proxy_manager:
+                                proxy_manager.mark_used(proxy)
                             if keep_session:
                                 result["session"] = session
                                 keep_open = True
                             return result
                     else:
                         result["error"] = password_result.get("error", "密码设置失败")
+                        error_code = password_result.get("error_code", "")
+                        # 检测 IP 被禁
+                        if error_code == "ip-signup-blocked" or "ip-signup-blocked" in str(result["error"]).lower():
+                            if proxy and proxy_manager:
+                                proxy_manager.mark_banned(proxy, reason="ip-signup-blocked")
                         if password_result.get("retryable") is False:
                             return result
                 else:
                     result["success"] = True
+                    if proxy and proxy_manager:
+                        proxy_manager.mark_used(proxy)
                     if keep_session:
                         result["session"] = session
                         keep_open = True
@@ -1847,6 +1890,11 @@ def signup(
 
             else:
                 result["error"] = submit_result.get("error", "注册失败")
+                error_info = str(submit_result.get("error", "")) + str(submit_result.get("error_code", ""))
+                # 检测 IP 被禁
+                if "ip-signup-blocked" in error_info.lower():
+                    if proxy and proxy_manager:
+                        proxy_manager.mark_banned(proxy, reason="ip-signup-blocked")
                 print(f"    注册失败: {result['error']}")
         finally:
             if not keep_open:

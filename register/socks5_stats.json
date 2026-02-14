@@ -1,0 +1,452 @@
+{
+  "socks5://38.60.198.207:5555": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "ip-signup-blocked",
+    "ban_time": "2026-02-14 10:32:22"
+  },
+  "socks5://http://85.112.80.50:9091": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:36:45"
+  },
+  "socks5://51.15.96.147:9060": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "ip-signup-blocked",
+    "ban_time": "2026-02-14 10:37:12"
+  },
+  "socks5://https://31.56.30.50:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:39:48"
+  },
+  "socks5://http://49.151.180.144:8082": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:39:51"
+  },
+  "socks5://137.184.35.83:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b63350ea20>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:39:56"
+  },
+  "socks5://https://54.83.250.29:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:39:59"
+  },
+  "socks5://85.209.230.147:10801": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: Connection closed unexpectedly\"))",
+    "ban_time": "2026-02-14 10:39:59"
+  },
+  "socks5://http://165.101.102.185:8087": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:02"
+  },
+  "socks5://43.156.225.60:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: SOCKS5 proxy server sent invalid data\"))",
+    "ban_time": "2026-02-14 10:40:18"
+  },
+  "socks5://https://161.35.227.149:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:20"
+  },
+  "socks5://http://134.209.224.62:11112": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:23"
+  },
+  "socks5://https://43.199.24.177:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:26"
+  },
+  "socks5://https://89.111.27.219:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:29"
+  },
+  "socks5://http://89.31.125.139:3128": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:31"
+  },
+  "socks5://https://64.64.234.160:4430": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:34"
+  },
+  "socks5://https://185.212.171.162:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:37"
+  },
+  "socks5://35.72.90.28:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f70ec0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:40:42"
+  },
+  "socks5://https://123.108.164.102:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:40:44"
+  },
+  "socks5://43.135.160.191:9050": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "ip-signup-blocked",
+    "ban_time": "2026-02-14 10:40:56"
+  },
+  "socks5://http://154.58.138.231:8088": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:04"
+  },
+  "socks5://https://41.77.155.143:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:07"
+  },
+  "socks5://https://18.184.53.141:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:10"
+  },
+  "socks5://103.157.204.101:9050": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f72720>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:41:15"
+  },
+  "socks5://https://23.106.56.43:19881": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:17"
+  },
+  "socks5://https://217.96.36.36:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:20"
+  },
+  "socks5://https://217.192.241.88:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:23"
+  },
+  "socks5://http://45.174.94.18:8087": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:26"
+  },
+  "socks5://104.248.56.6:9053": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b63350dc70>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:41:31"
+  },
+  "socks5://116.107.139.194:5555": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f949b0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:41:36"
+  },
+  "socks5://https://47.88.35.91:3128": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:38"
+  },
+  "socks5://124.156.222.36:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f71ac0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:41:43"
+  },
+  "socks5://https://18.185.105.192:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:46"
+  },
+  "socks5://https://13.234.158.225:1443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:41:49"
+  },
+  "socks5://https://192.210.193.125:3129": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:04"
+  },
+  "socks5://44.225.218.148:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f72450>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:42:09"
+  },
+  "socks5://http://109.92.141.2:9": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:12"
+  },
+  "socks5://https://110.80.25.76:8094": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:14"
+  },
+  "socks5://176.9.5.86:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\"))",
+    "ban_time": "2026-02-14 10:42:18"
+  },
+  "socks5://185.70.129.183:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f72360>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:42:23"
+  },
+  "socks5://43.246.201.253:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Read timed out. (read timeout=5)",
+    "ban_time": "2026-02-14 10:42:29"
+  },
+  "socks5://http://81.43.236.187:999": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:32"
+  },
+  "socks5://https://185.250.38.104:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:34"
+  },
+  "socks5://http://165.101.102.189:8087": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:37"
+  },
+  "socks5://http://103.38.104.214:8087": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:40"
+  },
+  "socks5://https://184.177.110.106:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:42:43"
+  },
+  "socks5://185.16.60.184:50161": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2b633f42480>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:42:49"
+  },
+  "socks5://158.69.212.162:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Read timed out. (read timeout=5)",
+    "ban_time": "2026-02-14 10:42:59"
+  },
+  "socks5://159.69.21.0:9050": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "ip-signup-blocked",
+    "ban_time": "2026-02-14 10:43:12"
+  },
+  "socks5://https://188.40.113.48:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:43:20"
+  },
+  "socks5://http://94.177.131.12:3128": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [Errno 11001] getaddrinfo failed\"))",
+    "ban_time": "2026-02-14 10:43:23"
+  },
+  "socks5://176.124.208.46:8888": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\"))",
+    "ban_time": "2026-02-14 10:48:03"
+  },
+  "socks5://45.81.254.62:40000": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Read timed out. (read timeout=5)",
+    "ban_time": "2026-02-14 10:48:09"
+  },
+  "socks5://37.32.9.123:8080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2185662a2d0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:48:14"
+  },
+  "socks5://64.186.225.23:443": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x21856628170>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:48:40"
+  },
+  "socks5://43.173.1.193:20000": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://151.243.18.43:60000": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x21856628350>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:50:14"
+  },
+  "socks5://46.19.66.190:1080": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://178.62.116.7:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2185714e8a0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:52:06"
+  },
+  "socks5://113.30.150.160:9055": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://129.226.152.29:20000": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://171.240.118.210:5555": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: 0x02: Connection not allowed by ruleset\"))",
+    "ban_time": "2026-02-14 10:54:59"
+  },
+  "socks5://185.123.53.225:30000": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Read timed out. (read timeout=5)",
+    "ban_time": "2026-02-14 10:55:05"
+  },
+  "socks5://154.197.69.137:1080": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\"))",
+    "ban_time": "2026-02-14 10:55:09"
+  },
+  "socks5://132.145.110.217:9050": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://185.16.61.20:50000": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: No username/password supplied. Server requested username/password authentication\"))",
+    "ban_time": "2026-02-14 10:56:16"
+  },
+  "socks5://145.241.167.26:40000": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://103.219.251.22:1080": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://152.42.213.94:9999": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: Connection closed unexpectedly\"))",
+    "ban_time": "2026-02-14 10:58:23"
+  },
+  "socks5://159.195.93.76:60000": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x21856608e00>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:58:28"
+  },
+  "socks5://89.46.249.187:8058": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"SOCKSHTTPSConnection(host='app.tavily.com', port=443): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\"))",
+    "ban_time": "2026-02-14 10:58:31"
+  },
+  "socks5://171.240.118.172:5555": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2185662aba0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:58:36"
+  },
+  "socks5://47.243.197.73:9050": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x21857169760>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:58:41"
+  },
+  "socks5://37.230.114.16:9050": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Read timed out. (read timeout=5)",
+    "ban_time": "2026-02-14 10:58:48"
+  },
+  "socks5://129.213.37.207:40000": {
+    "total_success": 1,
+    "banned": false
+  },
+  "socks5://118.99.3.133:1111": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2185714c800>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:59:36"
+  },
+  "socks5://38.23.34.11:40003": {
+    "total_success": 0,
+    "banned": true,
+    "ban_reason": "connectivity-error: SOCKSHTTPSConnectionPool(host='app.tavily.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<SOCKSHTTPSConnection(host='app.tavily.com', port=443) at 0x2185719f3e0>, 'Connection to app.tavily.com timed out. (connect timeout=5)'))",
+    "ban_time": "2026-02-14 10:59:41"
+  },
+  "socks5://135.181.248.47:9061": {
+    "total_success": 1,
+    "banned": false
+  }
+}

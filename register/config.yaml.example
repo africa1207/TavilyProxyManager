@@ -2,3 +2,9 @@
 OPENAI_BASEURL: https://example.com/v1
 OPENAI_API_KEY: key
 OPENAI_MODEL: gemini-3-flash
+
+# SOCKS5 代理池配置
+SOCKS5_ENABLED: false                    # 启用开关
+SOCKS5_FILE: "socks5.txt"                # 代理列表文件路径
+SOCKS5_TEST_TIMEOUT: 10                  # 连通性测试超时（秒）
+SOCKS5_REGISTRATIONS_PER_PROXY: 3        # 每个代理最大注册数后轮换

@@ -18,6 +18,7 @@ from signup import (
     signup,
     verify_email,
 )
+from socks5_manager import Socks5PoolManager
 
 # 配置
 OUTPUT_FILE = "api_keys.txt"
@@ -338,6 +339,11 @@ def batch_signup(
     # 加载配置
     config = load_config()
 
+    # 初始化代理管理器
+    proxy_manager = None
+    if config.get("SOCKS5_ENABLED", False):
+        proxy_manager = Socks5PoolManager(config)
+
     email_list = list(emails) if emails is not None else []
     if emails is None:
         if count <= 0:
@@ -432,6 +438,7 @@ def batch_signup(
                         mail_jwt=None,
                         keep_session=True,
                         debug_init=debug_init,
+                        proxy_manager=proxy_manager,
                     )
 
                     signup_session = result.get("session")
@@ -470,11 +477,26 @@ def batch_signup(
                         error = result.get("error", "unknown")
                         print(f"\n注册失败: {error}")
 
-                        # IP 被禁止：立即终止批量注册
+                        # IP 被禁止：检查是否还有可用代理
                         if isinstance(error, str) and "ip-signup-blocked" in error:
-                            save_failed(failed_file, email, error)
-                            print("\n检测到 ip-signup-blocked：当前 IP 已被禁止，终止批量注册。")
-                            return
+                            # 有代理池且还有可用代理：换代理重试当前邮箱
+                            if proxy_manager and proxy_manager.enabled:
+                                non_banned = [p for p in proxy_manager.proxies if p not in proxy_manager.banned]
+                                if non_banned:
+                                    print(f"\n[PROXY] 当前代理 IP 被禁，还有 {len(non_banned)} 个可用代理，重试...")
+                                    if interval > 0:
+                                        time.sleep(interval)
+                                    continue
+                                else:
+                                    # 所有代理都被 ban 了
+                                    save_failed(failed_file, email, error)
+                                    print("\n[PROXY] 所有代理 IP 均被禁止，终止批量注册。")
+                                    return
+                            else:
+                                # 没开代理池，直接终止
+                                save_failed(failed_file, email, error)
+                                print("\n检测到 ip-signup-blocked：当前 IP 已被禁止，终止批量注册。")
+                                return
 
                         # 域名被禁用：加入禁用列表并重新获取邮箱注册（仅自动生成模式）
                         if (
